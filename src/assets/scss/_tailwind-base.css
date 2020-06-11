@@ -1,3 +1,7 @@
+/* Note: `npm run tailwind` compiles this file into
+*         src/assets/scss/_tailwind.css, which is imported from _init.scss.
+*         Styles not used in the app do not get bundled into the built css.
+*/
 @tailwind base;
 @tailwind utilities;
 @tailwind components;

@@ -24,8 +24,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent)
     fixture.detectChanges()
     const compiled = fixture.nativeElement
-    expect(compiled.querySelector('.content span').textContent).toContain(
-      'crooked-spine app is running!'
+    expect(compiled.querySelector('.site-title').textContent).toContain(
+      'DataLink Angular demo'
     )
   })
 })

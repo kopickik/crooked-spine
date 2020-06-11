@@ -1,0 +1,52 @@
+<div class="custom-form w-full max-w-screen-md">
+  <h2 class="text-3xl h-20 p-4">Programming survey</h2>
+  <form class="pl-4" action="">
+    <div class="md:flex mb-6">
+      <label
+        class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4"
+        for="how-much"
+      >
+        How much I like programming:
+      </label>
+      <div class="md:w-1/8">
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-20 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+          id="how-much"
+          type="number"
+          placeholder="0"
+          min="1"
+          max="10"
+        />
+      </div>
+    </div>
+    <div class="md:flex mb-6">
+      <div class="md:w-1/3">
+        <label
+          class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4"
+          for="ways"
+        >
+          Ways in which I like programming:
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+          id="ways"
+          type="text"
+          placeholder="I enjoy the challenge of solving..."
+        />
+      </div>
+    </div>
+    <div class="md:flex md:items-center">
+      <div class="md:w-1/3"></div>
+      <div class="md:w-2/3">
+        <button
+          class="shadow bg-green-600 hover:bg-green-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+          type="button"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
