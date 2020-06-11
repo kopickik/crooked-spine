@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core'
-import { FormBuilder, Validators } from '@angular/forms'
-import { ProgrammingSurvey } from '../../types/programmingSurvey'
+import { FormBuilder, Validators, FormControl } from '@angular/forms'
+
+import { forbiddenAnswerValidator } from './custom-form.validators'
 
 @Component({
   selector: 'custom-form',
@@ -9,10 +10,18 @@ import { ProgrammingSurvey } from '../../types/programmingSurvey'
 export class CustomFormComponent implements OnInit {
   customForm = this.fb.group({
     howMuch: [''],
-    ways: ['', Validators.required],
+    ways: new FormControl('', [
+      Validators.required,
+      Validators.minLength(2),
+      forbiddenAnswerValidator(/\b[iI]\s[d|D][o|O][n|N]['|"][t|T]\b/i),
+    ]),
   })
 
   constructor(private fb: FormBuilder) {}
+
+  get ways() {
+    return this.customForm.get('ways')
+  }
 
   submit() {
     const { howMuch, ways } = this.customForm.value

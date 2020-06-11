@@ -33,7 +33,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 2. add 2 inputs to the form
 
    - numerical input with label "How much I like programming"
-   - textual input with label "Ways in which I like programming"
+   - text input with label "Ways in which I like programming"
 
 3. make the "Ways in which I like programming" input required
 
@@ -51,4 +51,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
    - make sure your new method is called when the "How much I like programming" is changed by the user
 
-**BONUS**: Figure out the song this repo's title came from.
+**BONUS**: Create an issue with the title of the song that this repo's name came from.
