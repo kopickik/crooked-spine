@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "tailwind": "npx tailwind build ./src/assets/scss/_tailwind-base.css -c ./tailwind.config.js -o ./src/assets/scss/_tailwind.css"
+    "tailwind": "npx ngtw build --purge"
   },
   "private": true,
   "dependencies": {

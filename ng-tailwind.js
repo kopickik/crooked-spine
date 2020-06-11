@@ -4,7 +4,7 @@ module.exports = {
   sourceCSS: "src/assets/scss/_tailwind-base.css",
   outputCSS: "src/assets/scss/_tailwind.css",
   // Sass
-  sass: false,
+  sass: true,
   // PurgeCSS Settings
   purge: true,
   keyframes: false,
