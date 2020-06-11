@@ -13,7 +13,7 @@ export class CustomFormComponent implements OnInit {
     ways: new FormControl('', [
       Validators.required,
       Validators.minLength(2),
-      forbiddenAnswerValidator(/\b[iI]\s[d|D][o|O][n|N]['|"][t|T]\b/i),
+      forbiddenAnswerValidator(/\b[iI]\s?[d|D][o|O][n|N]['|"]?[t|T]\b/i),
     ]),
   })
 

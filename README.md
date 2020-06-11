@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Questions
+## Questions (from DL)
 
 1. `src/components/custom-form`
 
@@ -52,3 +52,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
    - make sure your new method is called when the "How much I like programming" is changed by the user
 
 **BONUS**: Create an issue with the title of the song that this repo's name came from.
+
+## License
+
+UNLICENSED

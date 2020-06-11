@@ -17,6 +17,7 @@
           placeholder="0"
           min="1"
           max="10"
+          onchange="console.log('Numerical input has been changed.')"
         />
       </div>
     </div>
@@ -41,7 +42,9 @@
           appForbiddenAnswer="I don't"
         />
         <div *ngIf="ways.errors?.forbiddenAnswer" class="pt-2 pl-2">
-          <p class="text-red-500 text-sm"><em>I'm sorry Dave</em>. 🤖</p>
+          <p class="text-red-500 text-sm">
+            <em>I'm sorry Dave, I can't allow that</em>. 🤖
+          </p>
         </div>
       </div>
     </div>
